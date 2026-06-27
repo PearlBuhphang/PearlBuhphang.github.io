@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern, aesthetic personal portfolio website" />
+  <title>Aiphi ✿ Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Portforlio.css">
+</head>
+<body id="top">
+
+  <!-- ============================================= -->
+  <!-- DARK MODE TOGGLE (Pure CSS, using :has)       -->
+  <!-- ============================================= -->
+  <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode" />
+
+  <!-- ============================================= -->
+  <!-- MOBILE MENU TOGGLE (Pure CSS checkbox hack)   -->
+  <!-- ============================================= -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" />
+
+  <!-- ============================================= -->
+  <!-- NAVIGATION BAR                                -->
+  <!-- ============================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#top" class="logo">
+        <span class="logo-icon">✿</span>
+        <span class="logo-text">Aiphida Mary<span class="logo-accent">Buhphang</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right side controls -->
+      <div class="nav-controls">
+        <!-- Dark mode toggle label -->
+        <label for="dark-mode-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">☾</span>
+        </label>
+
+        <!-- Hamburger menu (mobile) -->
+        <label for="menu-toggle" class="hamburger" aria-label="Open menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </label>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================= -->
+  <!-- HERO SECTION                                  -->
+  <!-- ============================================= -->
+  <section class="hero" id="home">
+    <!-- Decorative floating shapes -->
+    <div class="floating-shapes">
+      <span class="shape shape-1">✿</span>
+      <span class="shape shape-2">♡</span>
+      <span class="shape shape-3">✦</span>
+      <span class="shape shape-4">❀</span>
+      <span class="shape shape-5">✧</span>
+      <span class="shape shape-6">♡</span>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content fade-in-up">
+        <p class="hero-greeting">Hello, lovely world <span class="wave">👋</span></p>
+        <h1 class="hero-name">I'm <span class="gradient-text"> Aiphida Mary Buhphang</span></h1>
+
+        <!-- Typing animation -->
+        <div class="typing-wrapper">
+          <span class="typing-prefix">I'm a</span>
+          <span class="typing-text">
+            <span class="typing-word">Web Designer</span>
+            <span class="typing-word">Developer</span>
+            <span class="typing-word">UI/UX Designer</span>
+            <span class="typing-word">Video Editor</span>
+          </span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          Crafting dreamy digital experiences with soft aesthetics, clean code,
+          and a sprinkle of magic. Let's build something beautiful together.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <span class="btn-icon">→</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Let's Talk</span>
+            <span class="btn-icon">✉</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile picture placeholder -->
+      <div class="hero-image fade-in-right">
+        <div class="profile-frame">
+          <div class="profile-picture">
+            <div class="profile-placeholder">
+              <span>✿</span>
+            </div>
+          </div>
+          <div class="profile-decoration deco-1"></div>
+          <div class="profile-decoration deco-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- ABOUT ME SECTION                              -->
+  <!-- ============================================= -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-subtitle">Get to know me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="title-decoration">✿</div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image fade-in-left">
+          <div class="about-img-wrapper">
+            <div class="about-placeholder">
+              <span>❀</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content fade-in-right">
+          <h3 class="about-heading">A passionate creator based in <span class="highlight">Dreamland</span></h3>
+          <p class="about-text">
+            Hi there! I'm Aiphi— a multi-disciplinary creative who loves turning ideas
+            into pixel-perfect realities. With over 5 years of experience in web design,
+            development, graphic design, and video editing, I bring a unique blend of
+            technical skill and artistic vision to every project.
+          </p>
+          <p class="about-text">
+            My philosophy is simple: design should feel like a warm hug. I believe in
+            creating experiences that are not only beautiful but also meaningful,
+            accessible, and delightful to use.
+          </p>
+
+          <!-- Info cards -->
+          <div class="about-info">
+            <div class="info-card">
+              <span class="info-icon">✦</span>
+              <div>
+                <h4>Name</h4>
+                <p>Luna Rose</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">✦</span>
+              <div>
+                <h4>Email</h4>
+                <p>hello@aiphidamarybuhphang.dev</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">✦</span>
+              <div>
+                <h4>Location</h4>
+                <p>Dreamland, Earth</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">✦</span>
+              <div>
+                <h4>Availability</h4>
+                <p>Open to work</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">
+            <span>Download CV</span>
+            <span class="btn-icon">↓</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SKILLS SECTION                                -->
+  <!-- ============================================= -->
+  <section class="skills section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-subtitle">What I'm good at</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="title-decoration">✦</div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills -->
+        <div class="skills-card glass-card fade-in-left">
+          <h3 class="skills-card-title">
+            <span class="card-icon">⚡</span>
+            Technical Skills
+          </h3>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">HTML5 & CSS3</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 95%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 88%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">React / Vue</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 82%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">UI / UX Design</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">Responsive Design</span>
+              <span class="skill-percent">93%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 93%"></div></div>
+          </div>
+        </div>
+
+        <!-- Creative Skills -->
+        <div class="skills-card glass-card fade-in-right">
+          <h3 class="skills-card-title">
+            <span class="card-icon">🎨</span>
+            Creative Skills
+          </h3>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">Graphic Design</span>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 92%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">Video Editing</span>
+              <span class="skill-percent">87%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 87%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">Motion Graphics</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">Brand Identity</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-header">
+              <span class="skill-name">Illustration</span>
+              <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 78%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools icons -->
+      <div class="tools-section fade-in-up">
+        <h3 class="tools-title">Tools I Love</h3>
+        <div class="tools-grid">
+          <div class="tool-item"><span>🎨</span><p>Figma</p></div>
+          <div class="tool-item"><span>✨</span><p>Photoshop</p></div>
+          <div class="tool-item"><span>🖌</span><p>Illustrator</p></div>
+          <div class="tool-item"><span>🎬</span><p>Premiere</p></div>
+          <div class="tool-item"><span>💫</span><p>After Effects</p></div>
+          <div class="tool-item"><span>💻</span><p>VS Code</p></div>
+          <div class="tool-item"><span>🌸</span><p>Notion</p></div>
+          <div class="tool-item"><span>📐</span><p>XD</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SERVICES SECTION                              -->
+  <!-- ============================================= -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-subtitle">What I offer</span>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+        <div class="title-decoration">❀</div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card glass-card fade-in-up">
+          <div class="service-icon">🌐</div>
+          <h3 class="service-title">Web Design</h3>
+          <p class="service-desc">
+            Beautiful, responsive websites that tell your story and captivate your audience with thoughtful design.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up">
+          <div class="service-icon">💻</div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">
+            Clean, modern code that brings designs to life with smooth interactions and blazing performance.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up">
+          <div class="service-icon">🎨</div>
+          <h3 class="service-title">Graphic Design</h3>
+          <p class="service-desc">
+            Eye-catching visuals, logos, and brand identities that make your business unforgettable.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up">
+          <div class="service-icon">🎬</div>
+          <h3 class="service-title">Video Editing</h3>
+          <p class="service-desc">
+            Cinematic edits, engaging reels, and polished videos that capture attention and tell compelling stories.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up">
+          <div class="service-icon">📱</div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-desc">
+            Intuitive interfaces and delightful user experiences that keep people coming back for more.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up">
+          <div class="service-icon">✨</div>
+          <h3 class="service-title">Brand Identity</h3>
+          <p class="service-desc">
+            Cohesive brand systems that express your personality and connect emotionally with your audience.
+          </p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- PROJECTS SECTION                              -->
+  <!-- ============================================= -->
+  <section class="projects section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-subtitle">Recent work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="title-decoration">✿</div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card fade-in-up">
+          <div class="project-image">
+            <div class="project-placeholder" style="--bg: linear-gradient(135deg, #ffb6d9, #d4b5ff)">
+              <span>🌸</span>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h4>Blossom Boutique</h4>
+                <p>E-commerce website with soft pastel aesthetics</p>
+                <div class="overlay-buttons">
+                  <a href="#" class="overlay-btn">View Live</a>
+                  <a href="#" class="overlay-btn">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Web Design</span>
+            <h3 class="project-title">Blossom Boutique</h3>
+            <p class="project-desc">A dreamy online flower shop with custom animations.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card fade-in-up">
+          <div class="project-image">
+            <div class="project-placeholder" style="--bg: linear-gradient(135deg, #b5d8ff, #b5f0d3)">
+              <span>🌊</span>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h4>Ocean Dashboard</h4>
+                <p>Analytics dashboard with fluid interactions</p>
+                <div class="overlay-buttons">
+                  <a href="#" class="overlay-btn">View Live</a>
+                  <a href="#" class="overlay-btn">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">UI/UX</span>
+            <h3 class="project-title">Ocean Dashboard</h3>
+            <p class="project-desc">Data visualization made beautiful and intuitive.</p>
+            <div class="project-tags">
+              <span>React</span><span>Figma</span><span>D3</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card fade-in-up">
+          <div class="project-image">
+            <div class="project-placeholder" style="--bg: linear-gradient(135deg, #d4b5ff, #ffb6d9)">
+              <span>🦋</span>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h4>Butterfly Branding</h4>
+                <p>Complete brand identity for a beauty startup</p>
+                <div class="overlay-buttons">
+                  <a href="#" class="overlay-btn">View Case</a>
+                  <a href="#" class="overlay-btn">Behance</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Branding</span>
+            <h3 class="project-title">Butterfly Branding</h3>
+            <p class="project-desc">Logo, colors, typography, and brand guidelines.</p>
+            <div class="project-tags">
+              <span>Illustrator</span><span>Photoshop</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card fade-in-up">
+          <div class="project-image">
+            <div class="project-placeholder" style="--bg: linear-gradient(135deg, #fff4d6, #ffb6d9)">
+              <span>🎬</span>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h4>Golden Hour Film</h4>
+                <p>Cinematic travel video with color grading</p>
+                <div class="overlay-buttons">
+                  <a href="#" class="overlay-btn">Watch</a>
+                  <a href="#" class="overlay-btn">Vimeo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Video</span>
+            <h3 class="project-title">Golden Hour Film</h3>
+            <p class="project-desc">A dreamy travel montage with soft color grading.</p>
+            <div class="project-tags">
+              <span>Premiere</span><span>After Effects</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card fade-in-up">
+          <div class="project-image">
+            <div class="project-placeholder" style="--bg: linear-gradient(135deg, #b5f0d3, #b5d8ff)">
+              <span>🍃</span>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h4>Mint Wellness App</h4>
+                <p>Mobile app design for a meditation platform</p>
+                <div class="overlay-buttons">
+                  <a href="#" class="overlay-btn">Prototype</a>
+                  <a href="#" class="overlay-btn">Dribbble</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Mobile App</span>
+            <h3 class="project-title">Mint Wellness</h3>
+            <p class="project-desc">Calming meditation app with mindful UX.</p>
+            <div class="project-tags">
+              <span>Figma</span><span>Prototyping</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card fade-in-up">
+          <div class="project-image">
+            <div class="project-placeholder" style="--bg: linear-gradient(135deg, #ffb6d9, #fff4d6)">
+              <span>🌷</span>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h4>Tulip Magazine</h4>
+                <p>Digital magazine layout and editorial design</p>
+                <div class="overlay-buttons">
+                  <a href="#" class="overlay-btn">View</a>
+                  <a href="#" class="overlay-btn">PDF</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Editorial</span>
+            <h3 class="project-title">Tulip Magazine</h3>
+            <p class="project-desc">Elegant editorial design with custom typography.</p>
+            <div class="project-tags">
+              <span>InDesign</span><span>Illustrator</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- EDUCATION SECTION (Timeline)                  -->
+  <!-- ============================================= -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-subtitle">My academic journey</span>
+        <h2 class="section-title"><span class="gradient-text">Education</span></h2>
+        <div class="title-decoration">🎓</div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2022 — 2024</span>
+            <h3 class="timeline-title">Master of Fine Arts in Digital Design</h3>
+            <h4 class="timeline-place">Royal Academy of Arts ✿</h4>
+            <p class="timeline-desc">
+              Specialized in interactive media, UX research, and advanced motion design.
+              Graduated with honors and received the Creative Excellence Award.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2018 — 2022</span>
+            <h3 class="timeline-title">Bachelor of Science in Computer Science</h3>
+            <h4 class="timeline-place">Dreamland University ❀</h4>
+            <p class="timeline-desc">
+              Focus on web technologies, human-computer interaction, and software engineering.
+              Led the university's design club and won multiple hackathons.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2023</span>
+            <h3 class="timeline-title">Google UX Design Certificate</h3>
+            <h4 class="timeline-place">Coursera ✦</h4>
+            <p class="timeline-desc">
+              Comprehensive program covering user research, wireframing, prototyping,
+              and usability testing with real-world projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2021</span>
+            <h3 class="timeline-title">Advanced Motion Design</h3>
+            <h4 class="timeline-place">School of Motion 🎬</h4>
+            <p class="timeline-desc">
+              Intensive course on After Effects, animation principles, and creating
+              cinematic motion graphics for digital platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- EXPERIENCE SECTION (Timeline)                 -->
+  <!-- ============================================= -->
+  <section class="experience section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-subtitle">Where I've worked</span>
+        <h2 class="section-title"><span class="gradient-text">Experience</span></h2>
+        <div class="title-decoration">💼</div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2026 — Present</span>
+            <h3 class="timeline-title">Senior UI/UX Designer</h3>
+            <h4 class="timeline-place">Petal Studio 🌸</h4>
+            <p class="timeline-desc">
+              Leading the design team on flagship products. Creating design systems,
+              mentoring juniors, and collaborating with engineering to ship delightful experiences.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2022 — 2024</span>
+            <h3 class="timeline-title">Frontend Developer & Designer</h3>
+            <h4 class="timeline-place">CloudBerry Labs ☁</h4>
+            <p class="timeline-desc">
+              Built responsive web applications with React and modern CSS. Designed
+              marketing pages that increased conversion rates by 40%.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2024 — 2026</span>
+            <h3 class="timeline-title">Freelance Creative Designer</h3>
+            <h4 class="timeline-place">Self-Employed ✨</h4>
+            <p class="timeline-desc">
+              Worked with 30+ clients worldwide on branding, web design, and video editing.
+              Built a loyal client base through quality and care.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2025 — 2026</span>
+            <h3 class="timeline-title">Junior Graphic Designer</h3>
+            <h4 class="timeline-place">Sunshine Agency ☀</h4>
+            <p class="timeline-desc">
+              Created social media content, print materials, and brand assets for
+              local businesses. Learned the foundations of professional design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- TESTIMONIALS SECTION                          -->
+  <!-- ============================================= -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-subtitle">Kind words</span>
+        <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+        <div class="title-decoration">💕</div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card glass-card fade-in-up">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">
+            Aiphida is an absolute dream to work with! Her designs are not only beautiful
+            but truly capture the essence of our brand. Highly recommended!
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="--bg: linear-gradient(135deg, #ffb6d9, #d4b5ff)">S</div>
+            <div>
+              <h4>Sophie Laurent</h4>
+              <p>CEO, Blossom Boutique</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card fade-in-up">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">
+            Working with Aiphida was a magical experience. She delivered beyond our
+            expectations and her attention to detail is unmatched. A true artist!
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="--bg: linear-gradient(135deg, #b5d8ff, #b5f0d3)">M</div>
+            <div>
+              <h4>Marcus Chen</h4>
+              <p>Founder, CloudBerry Labs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card fade-in-up">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">
+            The video Aiphia edited for us went viral! Her creative vision and technical
+            skills are incredible. We've already booked her for our next project.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="--bg: linear-gradient(135deg, #fff4d6, #ffb6d9)">E</div>
+            <div>
+              <h4>Emma Rodriguez</h4>
+              <p>Marketing Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- CONTACT SECTION                               -->
+  <!-- ============================================= -->
+  <section class="contact section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-subtitle">Let's create together</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="title-decoration">✉</div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact info -->
+        <div class="contact-info fade-in-left">
+          <h3 class="contact-heading">Let's chat about my project 💌</h3>
+          <p class="contact-desc">
+            Have an idea brewing? I'd love to hear about it! Drop me a message
+            and let's turn your vision into something beautiful.
+          </p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>
+                <h4>Email</h4>
+                <p>hello@aiphidamarybuhphang.dev</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">☎</div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 9612142705</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Location</h4>
+                <p>Dreamland, Earth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact-form glass-card fade-in-right" action="#" method="post">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" " />
+            <label for="name">Aiphida Mary Buhphang</label>
+            <span class="form-icon">✿</span>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" " />
+            <label for="email">aiphidamarybuhphang@gmail.com</label>
+            <span class="form-icon">✉</span>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required placeholder=" " />
+            <label for="subject">Subject</label>
+            <span class="form-icon">✦</span>
+          </div>
+
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Your Message</label>
+            <span class="form-icon">💬</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span>Send Message</span>
+            <span class="btn-icon">→</span>
+            <span class="btn-loader"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FOOTER                                        -->
+  <!-- ============================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#top" class="logo">
+            <span class="logo-icon">✿</span>
+            <span class="logo-text">Aiphi<span class="logo-accent">Mary Buhphang</span></span>
+          </a>
+          <p class="footer-tagline">
+            Crafting dreamy digital experiences with love and pixels.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <span>📷</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <span>🐦</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <span>💼</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="Dribbble">
+              <span>🏀</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="GitHub">
+              <span>🐙</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="Behance">
+              <span>🅱</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aiphida Mary Buhphang. Made with <span class="heart">♡</span> and lots of coffee.</p>
+        <p>Designed & built with pure HTML & CSS ✨</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================= -->
+  <!-- BACK TO TOP BUTTON                            -->
+  <!-- ============================================= -->
+  <a href="#top" class="back-to-top" aria-label="Back to top">
+    <span>↑</span>
+  </a>
+
+</body>
+</html>
